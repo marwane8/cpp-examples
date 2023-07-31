@@ -1,0 +1,49 @@
+{
+    "version": "2.0.0",
+    "configurations": [
+        {
+            "name": "C++ App Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/build/src/hello",
+            "preLaunchTask": "build",
+            "internalConsoleOptions": "openOnSessionStart",
+            "logging": {
+                "moduleLoad": false,
+                "programOutput": true,
+                "trace": false
+            },
+            "showDisplayString": false,
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "externalConsole": false, // set true to enable keyboard input
+            "osx": {
+                "MIMode": "lldb"
+            }
+        },
+        {
+            "name": "C++ Test Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/build/test/math_app_tests",
+            "preLaunchTask": "build",
+            "internalConsoleOptions": "openOnSessionStart",
+            "logging": {
+                "moduleLoad": false,
+                "programOutput": true,
+                "trace": false
+            },
+            "showDisplayString": false,
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "externalConsole": false, // set true to enable keyboard input
+            "osx": {
+                "MIMode": "lldb"
+            }
+        }
+    ]
+}
